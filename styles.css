@@ -195,26 +195,9 @@
 /* Quotes Section  */
 
 .quotes {
-  margin-top: 0;
-  padding: 0;
+  height: 392px;
+  background-color: var(--main-color);
 }
-
-.quotes-section {
-  margin-top: 0 !important;
-  /* Force removal of any top margin */
-  padding-top: 0;
-  /* Remove any top padding if necessary */
-  background-color: rgb(194, 113, 255);
-  /* Background color if needed */
-}
-
-/* Reset margin/padding for inner elements */
-.quotes-section * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 
 .quotes .carousel-item img {
   width: 160px;
@@ -259,8 +242,6 @@
   padding-left: var(--quotes-arrows-pad);
 }
 
-/* Media Queries */
-
 @media screen and (max-width: 991px) {
   .quotes .carousel-item img {
     margin-left: 80px;
@@ -285,13 +266,10 @@
 
   .quotes {
     height: auto;
-    margin-top: 0 !important;
-    /* Ensure no top margin */
   }
 
   .quotes .carousel-item img {
-    margin: 0 auto;
-    /* Adjust image margin */
+    margin: 90px auto 0 auto;
     padding-bottom: 10px;
   }
 
@@ -314,7 +292,6 @@
     padding-top: 24px;
   }
 }
-
 
 /* POPULAR SECTION  */
 
@@ -967,60 +944,22 @@
 }
 
 
-
-
-/* CAROUSEL AND SPINNER CSS EDITS */
-
-
-
-#quotes-carousel .carousel-item {
-  background-color: rgb(194 113 255);
-  padding: 90px;
-  border-radius: 10px;
+/* Ensure text color is white */
+.carousel-item .col-12.col-sm-7.text-center.text-sm-left p {
+  color: #fff;
 }
 
-#quotes-carousel .carousel-item .d-flex {
-  width: 60%;
-  /* Ensure the flex container takes up the full width */
+/* Adjust spacing between image and text */
+.carousel-item .row {
+  margin-left: 0;
 }
 
-#quotes-carousel img.rounded-circle {
-  margin-right: 30px;
-  /* Space between image and text */
+.carousel-item .col-12.col-sm-5 {
+  padding-right: 20px;
+  /* Adjust as needed to bring text closer to image */
 }
 
-#quotes-carousel .carousel-item div {
-  text-align: left;
-  /* Ensure text is aligned to the left of the div */
-  color: white;
-  /* Set text color to contrast with purple background */
+.carousel-item .col-12.col-sm-7 {
+  padding-left: 15px;
+  /* Adjust as needed to bring text closer to image */
 }
-
-#quotes-carousel .carousel-item p {
-  margin-bottom: 5px;
-  /* Adjust spacing between text elements */
-}
-
-/* Add this to your styles.css */
-.quotes-section {
-  position: relative;
-}
-
-#quotes-loader {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  color: #fcfcfc;
-  animation-duration: 0.1ms;
-}
-
-#quotes-loader .spinner-border {
-  width: 3rem;
-  height: 3rem;
-  border-width: 0.4rem;
-}
-
-/* ushtrimi 2 */
-
